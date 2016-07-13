@@ -10,6 +10,10 @@
   "license": "ISC",
   "devDependencies": {
     "gulp": "^3.9.1",
-    "gulp-live-server": "0.0.30"
+    "gulp-live-server": "0.0.30",
+    "jasmine": "^2.4.1",
+    "karma": "^1.1.1",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-jasmine": "^1.0.2"
   }
 }
