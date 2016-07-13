@@ -7,5 +7,6 @@
 *   Call the gulp serve task
     *   server will be running on the port 3000
 
-> Any changes made inside static/ folder will be reflected immediately. 
+> Any changes made inside static/ folder will be reflected immediately
+
 > Enjoy!
