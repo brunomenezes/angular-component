@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="psMovies">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link href="bower_components/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
+    </head>
+    <body ng-cloak>
+        
+        <nav class="navbar navbar-default navbar-inverse container-fluid">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a href="#" class="navbar-brand" >At the Movies</a>
+                </div>
+            </div>
+        </nav>
+
+        <div class="container">
+            <movie-list></movie-list>
+        </div>
+        
+        <script src="bower_components/angular/angular.js"></script>
+        <script src="ps-movies/module.js"></script>
+        <script src="ps-movies/movie-list.component.js"></script>
+        <script src="ps-movies/movie-rating.component.js"></script>
+    </body>
+</html>

@@ -1,0 +1,32 @@
+<div>
+    <table class="table">
+        <thead>
+            <th>Title</th>
+            <th>Length</th>
+            <th>Rating</th>
+            <th></th>
+        </thead>
+        <tbody>
+            <tr ng-repeat="movie in model.movies">
+                <td>{{movie.title}}</td>
+                <td>{{movie.length}}</td>
+                <td>
+                    <movie-rating value='movie.rating'>
+                        <span class="glyphicon glyphicon-star"></span>
+                    </movie-rating>
+                </td>
+                <td>
+                    <span class="btn-group">
+                    <button type="button" class="btn btn-default" ng-click="model.downRating(movie)">
+                        <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
+                    </button>
+                    <button type="button" class="btn btn-default" ng-click="model.upRating(movie)">
+                        <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
+                    </button>
+                    </span>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+
+</div>
