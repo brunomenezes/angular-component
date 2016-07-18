@@ -1,0 +1,7 @@
+accordion .ng-enter {
+    animation: bounceInLeft 0.5s;
+}
+
+accordion .ng-leave {
+    animation: bounceOutRight 0.8s;
+}
