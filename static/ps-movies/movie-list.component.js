@@ -16,24 +16,23 @@ void function movieListComponent(angular) {
             fetchMovies($http).then(movies => {
                 model.movies = movies;
             })
-        }
+        };
 
-        model.goTo = function(id) {
-            console.log(model.$router);
-            model.$router.navigate(['Details', { id: id }]);
-        }
+        model.goTo = function(id) {            
+            model.$router.navigate(['Details', { id: id }, 'Overview']);
+        };
 
         model.upRating = function(movie) {
             if(movie.rating < 5) {
                 movie.rating += 1;
             }
-        }
+        };
 
         model.downRating = function(movie) {
             if(movie.rating > 1) {
                 movie.rating -= 1;
             }
-        }
+        };
     }
 
     controller.$inject = ['$http'];
