@@ -11,7 +11,7 @@
                 <td>{{movie.title}}</td>
                 <td>{{movie.length}}</td>
                 <td>
-                    <movie-rating value='movie.rating' max='5'>
+                    <movie-rating value='movie.rating' max='5' set-rating='model.setRating(movie, value)'>
                     </movie-rating>
                 </td>
                 <td>
@@ -28,5 +28,14 @@
             </tr>
         </tbody>
     </table>
+
+    <accordion>
+        <accordion-panel heading='Panel 1'>
+            <span class="bg-info">this is the panel 1</span>
+        </accordion-panel>
+        <accordion-panel heading='Panel 2'>
+            <span class="bg-info">this is the panel 2</span>
+        </accordion-panel>
+    </accordion>
 
 </div>

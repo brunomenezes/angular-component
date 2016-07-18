@@ -22,6 +22,10 @@ void function movieListComponent(angular) {
             model.$router.navigate(['Details', { id: id }, 'Overview']);
         };
 
+        model.setRating = function(movie, newRating) {
+            movie.rating = newRating;
+        };
+
         model.upRating = function(movie) {
             if(movie.rating < 5) {
                 movie.rating += 1;

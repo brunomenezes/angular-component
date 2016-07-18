@@ -22,7 +22,8 @@ void function movieRatingComponent(angular) {
         templateUrl: '/ps-movies/movie-rating.component.html',
         bindings: {
             value: '<',
-            max : '<'
+            max : '<',
+            setRating: '&'
         } ,
         controllerAs: 'model',
         controller: controller
