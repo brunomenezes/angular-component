@@ -18,6 +18,11 @@ void function movieListComponent(angular) {
             })
         }
 
+        model.goTo = function(id) {
+            console.log(model.$router);
+            model.$router.navigate(['Details', { id: id }]);
+        }
+
         model.upRating = function(movie) {
             if(movie.rating < 5) {
                 movie.rating += 1;
@@ -36,7 +41,10 @@ void function movieListComponent(angular) {
     module.component('movieList', {
         templateUrl: '/ps-movies/movie-list.component.html',
         controllerAs: 'model',
-        controller: controller
+        controller: controller,
+        bindings: {
+            "$router" : '<'
+        }
     });
 
 } (angular);

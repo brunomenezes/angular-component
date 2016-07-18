@@ -16,14 +16,15 @@
                     </movie-rating>
                 </td>
                 <td>
-                    <span class="btn-group">
                     <button type="button" class="btn btn-default" ng-click="model.downRating(movie)">
                         <span class="glyphicon glyphicon-minus" aria-hidden="true"></span>
                     </button>
                     <button type="button" class="btn btn-default" ng-click="model.upRating(movie)">
                         <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                     </button>
-                    </span>
+                    <button ng-click="model.goTo(movie.id)" class="btn btn-default">
+                        <span class="glyphicon glyphicon-zoom-in"></span>
+                    </button>
                 </td>
             </tr>
         </tbody>
